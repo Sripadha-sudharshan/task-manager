@@ -24,12 +24,12 @@ def signup():
 	username = input("username: ")
 	password = input("password: ")
 	user_information(username, password)
-	print("please proceed towards log in")
+	print(" proceed towards log in")
 	login()
 
 
 def login():
-	print("Please enter your username ")
+	print(" enter your username ")
 	user_nm = input("Enter here: ")
 	
 	# Password as entered while logging in
@@ -61,9 +61,9 @@ def login():
 			elif a == '4':
 				task_update_viewer(user_nm)
 			else:
-				print("Wrong input ! bhai dekh kr input dal")
+				print("Wrong input")
 		else:
-			print("SIR YOUR PASSWORD OR USERNAME IS WRONG")
+			print("YOUR PASSWORD OR USERNAME IS WRONG")
 			login()
 
 	except Exception as e:
@@ -78,7 +78,7 @@ def view_data(username):
 
 
 def task_information(username):
-	print("Sir enter n.o of task you want to ADD")
+	print("enter n.o of task you want to ADD")
 	j = int(input())
 	f1 = open(username, 'a')
 	
